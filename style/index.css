@@ -53,26 +53,6 @@ h2.title{
   bottom: 0;
   margin: auto;
 }
-.productitem{
-  display: flex;
-  justify-content: space-around;
-}
-.item{
-  width: 284px;
-  text-align: left;
-}
-.item img{
-  width: 100%;
-}
-.item h3{
-  padding: 22px 0px 18px;
-}
-.item p{
-  line-height: 15px;
-}
-.item a{
-  line-height: 32px;
-}
 
 
 
@@ -259,6 +239,8 @@ h2.title{
   padding: 10px;
   position: absolute;
   transition: 0.5s;
+  width: 100%;
+  box-sizing: border-box;
 }
 .deco_position1{
   -ms-transform: translateY(285px);
@@ -275,9 +257,9 @@ h2.title{
 }
 .decoitem1:hover .deco_position1,
 .decoitem9:hover .deco_position1{
-  -ms-transform: translateY(235px);
-  -webkit-transform: translateY(235px);
-  transform: translateY(235px);
+  -ms-transform: translateY(250px);
+  -webkit-transform: translateY(250px);
+  transform: translateY(250px);
 }
 
 

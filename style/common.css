@@ -2,7 +2,7 @@
 /* ———————————————————————reset——————————————————————————————— */
 
 *{
-  outline: 1px solid #f00;
+  /* outline: 1px solid #f00; */
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,7 +68,7 @@ a{
 }
 .font14{
   font-size: 14px;
-  letter-spacing: 0.1em;
+  line-height: 1.6;
 }
 .font16{
   font-size: 16px;
@@ -221,6 +221,65 @@ header .banner p{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* ———————————————————————breadcrumb——————————————————————————————— */
+.breadcrumb{
+  width: 960px;
+  margin: auto;
+}
+.breadcrumb li{
+  float: left;
+}
+.breadcrumb>li{
+  padding-left: 24px;
+}
+.breadcrumb li+li::before{
+  content: '>';
+
+}
+.breadcrumb li a{
+  padding: 10px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/* ———————————————————————product——————————————————————————————— */
+.productitem{
+  display: flex;
+  justify-content: space-around;
+}
+.item{
+  width: 284px;
+  text-align: left;
+}
+.item img{
+  width: 100%;
+}
+.item h3{
+  padding: 22px 0px 18px;
+}
+.item p{
+  line-height: 15px;
+}
+.item a{
+  line-height: 32px;
+}
 
 
 /* ———————————————————————footer——————————————————————————————— */
