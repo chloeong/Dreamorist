@@ -1,8 +1,7 @@
-
-/* ———————————————————————reset——————————————————————————————— */
+ /* ———————————————————————reset——————————————————————————————— */
 
 *{
-  outline: 1px solid #f00;
+  /* outline: 1px solid #f00; */
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,8 +62,29 @@ a{
 
 
 /* ———————————————————————font——————————————————————————————— */
+@font-face {
+  font-family: FontAwesome;
+  src: url("https://use.fontawesome.com/releases/v5.4.2/css/all.css");
+}
+@font-face {
+  font-family:"Lithos";
+  src:url("../font/LITHOS.eot") format("eot"),
+  url("../font/LITHOS.woff") format("woff"),
+  url("../font/LITHOS.ttf") format("truetype"),
+  url("../font/LITHOS.svg") format("svg");
+  font-weight:normal;font-style:normal;
+}
+@font-face {
+  font-family: "Leelawadee UI";
+  src: url('#{$ms-font-directory}/LeelawadeeUI-Thai/LeelawadeeUI-Regular.eot?#iefix') format('embedded-opentype'),
+       url('#{$ms-font-directory}/LeelawadeeUI-Thai/LeelawadeeUI-Regular.woff') format('woff'),
+       url('#{$ms-font-directory}/LeelawadeeUI-Thai/LeelawadeeUI-Regular.ttf') format('truetype'),
+       url('#{$ms-font-directory}/LeelawadeeUI-Thai/LeelawadeeUI-Regular#LeelawadeeUI-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .lithos{
-  font-family: "Lithos Pro Regular", "San-serif";
+  font-family: "Lithos", "San-serif";
 }
 .poiretOne{
   font-family: "Poiret One", "San-serif";
@@ -75,7 +95,7 @@ a{
 }
 .font14{
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 .font16{
   font-size: 16px;
@@ -83,8 +103,14 @@ a{
 .font18{
   font-size: 18px;
 }
+.font20{
+  font-size: 20px;
+}
 .font24{
   font-size: 24px;
+}
+.font30{
+  font-size: 30px;
 }
 .font36{
   font-size: 36px;
@@ -425,7 +451,7 @@ h2::after{
   content: '';
   display: block;
   width: 1px;
-  height: 138%;
+  height: 148%;
   background-color: #616161;
   position: absolute;
   right: -27px;
@@ -439,7 +465,7 @@ h2::after{
   background-color: #616161;
   border-radius: 50%;
   position: absolute;
-  left: -31px;
+  left: -29px;
   top: 85%;
 }
 .startBtn{
@@ -574,9 +600,9 @@ h2::after{
 }
 .decoitem1:hover .decoPosition1,
 .decoitem9:hover .decoPosition1{
-  -ms-transform: translateY(250px);
-  -webkit-transform: translateY(250px);
-  transform: translateY(250px);
+  -ms-transform: translateY(262px);
+  -webkit-transform: translateY(262px);
+  transform: translateY(262px);
 }
 
 
@@ -646,7 +672,7 @@ h2::after{
 }
 .longTermWorkshop::after{
   top: 7%;
-  right: 5%;
+  right: 0;
 
 }
 
@@ -715,7 +741,7 @@ h2::after{
   width: 45%;
   height: 670px;
   text-align: left;
-  overflow: hidden;
+  overflow: auto;
 }
 .singleProductItem img{
   width: 100%;
@@ -739,15 +765,13 @@ h2::after{
 .price{
   float: left;
 }
-.price h3{
-  padding: 0px 20px 20px 0px;
-}
+.price h3,
 .price p{
-  padding: 0px 20px 20px 0px;
+  padding: 0px 16px 20px 0px;
 }
 .quantity{
-  float: right;
-  padding: 82px 87px 0px 0px;
+  float: left;
+  padding: 89px 60px 0px;
 }
 .quantity input{
   width: 85px;
@@ -764,12 +788,15 @@ input[type="button"]{
 .buy{
   clear: both;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 10px;
 }
 .buyItNow{
   background-color: #9f8680;
   font-weight: 600;
+}
+.singleProductMain .buyItNow{
+  margin-right: 60px;
 }
 .add2Cart{
   background-color: #fff;
@@ -814,13 +841,13 @@ input[type="button"]{
 
 
 
-
+/* ———————————————————————relevant——————————————————————————————— */
 .relevant{
   padding: 50px 0px;
+  text-align: left;
 }
 .relevant h3{
   line-height: 2;
-  text-align: left;
 }
 .relevantProduct{
   display: flex;
@@ -847,13 +874,374 @@ input[type="button"]{
 
 
 
+/* ———————————————————————diyPage——————————————————————————————— */
+.diyPage{
+  padding-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.diyPageImg{
+  width: 350px;
+  margin: 0px 50px;
+}
+.diyPageImg img{
+  width: 100%;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,.2);
+}
+.diyPageDetail{
+  width: 420px;
+  border: 1px solid rgba(158,133,127,.2);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,.2);
+  padding: 0px 38px 20px;
+  text-align: left;
+  position: relative;
+}
+.diyPageDetail::before,
+.diyPageDetail::after{
+  color: #9f8680;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 250px;
+}
+.diyPageDetail::before{
+  content:'\f053';
+  left: 10px;
+  /* background-image: url(images/left.png); */
+}
+.diyPageDetail::after{
+  content:'\f054';
+  left: 470px;
+  /* background-image: url(images/right.png); */
+}
+.diyPageDetail h3{
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  position: relative;
+}
+.diyPageDetail h3::after{
+  content: '';
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #9f8680;
+  opacity: .6;
+  position: absolute;
+  bottom: 0;
+}
+.diyPageDetail>span{
+  display: block;
+  padding-top: 20px;
+}
+.variety{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+}
+.variety::after{
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #9f8680;
+  border-radius: 50%;
+  opacity: .6;
+  position: absolute;
+  top: 9px;
+  left: 23px;
+}
+.variety div{
+  width: 120px;
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+.variety div span{
+  display: block;
+  padding-top: 5px;
+}
+.variety img{
+  border-radius: 50%;
+  width: 70%;
+}
+.color{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.color div{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 24px 0px 14px;
+}
+.color::after{
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #9f8680;
+  border-radius: 50%;
+  opacity: .6;
+  position: absolute;
+  top: 20px;
+  left: 59px;
+}
+.color1{
+  background-color: #c65e4a;
+}
+.color2{
+  background-color: #d47d6b;
+}
+.color3{
+  background-color: #2b7a83;
+}
+.color4{
+  background-color: #8fa5a8;
+}
+.color5{
+  background-color: #c35225;
+}
+.color6{
+  background-color: #ce9531;
+}
+.color7{
+  background-color: #493252;
+}
+.diyPageDetail .buy{
+  justify-content: space-between;
+}
+.diyPageDetail .buy span{
+  line-height: 2.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ———————————————————————decoPage——————————————————————————————— */
+.decoPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.decoPageImg{
+  width: 570px;
+  margin: 0px 6px;
+}
+.decoPageImg img,
+.decoPageSmallImg img{
+  width: 100%;
+}
+.decoPageSmallImg{
+  width: 130px;
+  margin: 27px 6px;
+  font-size: 0;
+  position: relative;
+}
+.decoPageSmallImg img+img{
+  padding-top: 6px;
+}
+.decoPageSmallImg::before,
+.decoPageSmallImg::after{
+  display: block;
+  color: #9f8680;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.decoPageSmallImg::before{
+  content: '\f106';
+  top: -30px;
+}
+.decoPageSmallImg::after{
+  content: "\f107";
+  bottom: -30px;
+}
+.decoPageDetail{
+  width: 170px;
+  margin: 0px 6px; 
+}
+.decoPageDetail p{
+  text-align: left;
+  padding: 20px 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ———————————————————————workshopPage——————————————————————————————— */
+.workshopPage{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  text-align: left;
+  padding: 50px 0px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,.2);
+  position: relative;
+}
+.workshopPage::before,
+.workshopPage::after{
+  color: #dacbc8;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+.workshopPage::before{
+  content:'\f053';
+  right: 60px;
+}
+.workshopPage::after{
+  content:'\f054';
+  right: 20px;
+}
+.workshopPageImg{
+  margin: 0px 15px 0px 35px;
+  width: 315px;
+}
+.workshopPageImg img{
+  width: 100%;
+  overflow: hidden;
+}
+.workshopDetail{
+  margin: 0px 20px 0px 15px;
+  width: 230px;
+}
+.workshopDetail h3{
+  padding-bottom: 15px;
+}
+.workshopDetail span{
+  display: block;
+  padding: 15px 0px;
+}
+.workshopDetail p{
+  padding: 12px 0px;
+}
+.workshopDetail ul{
+  padding: 30px 0px;
+}
+.workshopDetail ul li{
+  line-height: 1.8;
+}
+.workshopDatetime{
+  margin: 0px 90px 0px 20px;
+  width: 220px;
+}
+.workshopDatetime span{
+  /* font-weight: 600; */
+}
+.workshopDatetime p{
+  margin: 0px 15px;
+}
+.workshopDatetime>p+p{
+  padding: 10px 0px;
+}
+.datepicker{
+  padding: 10px;
+}
+.timepicker{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.timepicker button{
+  border-radius: 4px;
+  border: 1px solid #9f8680;
+  background-color: #fff;
+  position: relative;
+  margin: 0px 8px;
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,.1);
+}
+.timepicker button:nth-child(1){
+  background-color: #9f8680;
+  color: #fff;
+}
+.timepicker button span{
+  line-height: 1.8;
+  display: block;
+}
+.timepicker button span+span::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 0.6em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.morningSection span+span::before{
+  background-color: #fff;
+}
+.noonSection span+span::before,
+.everningSection span+span::before{
+  background-color: #dacbc8;
+}
+.bookNow{
+  width: 190px;
+  background-color: #9f8680;
+  margin: auto;
+}
+.longTermDate{
+  padding-bottom: 24px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ———————————————————————footer——————————————————————————————— */
-  footer{
+  #mainfooter{
     width: 960px;
     margin: auto;
     background-color: #584f52;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
   }
