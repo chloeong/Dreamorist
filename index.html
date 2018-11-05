@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dreamorist</title>
-  <link rel="stylesheet" href="../style/common.css">
-  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <base target="_blank">
 </head>
 <body>
   <header>
+    <!-- -----header----- -->
     <div class="header">
+      <!-- -----logo----- -->
       <a href="javascript:;">
         <figure class="logo">
-          <img src="../images/dreamorist_logo.png" alt="Dreamorist">
+          <img src="images/dreamorist_logo.png" alt="Dreamorist">
           <figcaption>Logo</figcaption>
         </figure>
       </a>
-      <nav class="navbar">
+      <!-- -----navbar----- -->
+      <nav>
         <ul class="clearfix">
           <li>
             <a href="javascript:;" class="lithos font14 font_454545">PRODUCT</a>
@@ -35,7 +38,8 @@
           </li>
         </ul>
       </nav>
-      <div class="profile">
+      <!-- -----loginbar----- -->
+      <div class="loginbar">
         <a href="javascript:;">
           <i class="material-icons">shopping_cart</i>
         </a>
@@ -44,8 +48,9 @@
         </a>
       </div>
     </div>
+    <!-- -----banner----- -->
     <div class="banner">
-      <img src="../images/banner01.jpg" alt="">
+      <img src="images/banner01.jpg" alt="">
       <h2 class="poiretOne font60">Hello! We're Dreamorist</h2>
       <p class="leelawadee font14">A Bouquet & basket agency Based In Taiwan</p>
     </div>
@@ -59,14 +64,16 @@
 
 
 
-
-  <section class="product">
-    <h2 class="title lithos font16 font_616161">OUR PRODUCT</h2>
-    <div class="productitem">
+  <!-- -----indexProduct----- -->
+  <section class="wrap">
+    <!-- -----title----- -->
+    <h2 class="lithos font16 font_616161">OUR PRODUCT</h2>
+    <!-- -----product----- -->
+    <div class="product">
       <div class="item">
         <img src="../images/bouquet05.jpg" alt="bouquet">
         <h3 class="poiretOne font24 font_616161">Bouquet</h3>
-        <p class="leelawadee font14 font_616161">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non aliquam exercitationem rem ipsam neque molestiae aperiam consequuntur iste excepturi.</p>
+        <p class="leelawadee font14 font_616161">Lorem ipsum dolor sit amet consectetur adipiindexProductsicing elit. Iusto non aliquam exercitationem rem ipsam neque molestiae aperiam consequuntur iste excepturi.</p>
         <a href="javascript:;" class="font_9f8680 font14 leelawadee">more</a>
       </div>
       <div class="item">
@@ -92,26 +99,30 @@
 
 
 
-
-  <section class="diy">
-    <h2 class="title lithos font16 font_616161">MAKE YOUR OWN BOUQUET</h2>
+  <!-- -----indexDiy----- -->
+  <section class="wrap">
+    <!-- -----title----- -->
+    <h2 class="lithos font16 font_616161">MAKE YOUR OWN BOUQUET</h2>
+    <!-- -----diyStep(flex)----- -->
     <div class="step">
+      <!-- -----step1(flex-start)----- -->
       <div class="step1">
         <img src="../images/flowerpicking.jpg" alt="flowerpicking">
-        <div class="step_desc">
+        <div class="stepDesc">
           <span class="poiretOne font36">01</span>
           <p class="leelawadee font14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores in mollitia, maiores repudiandae accusamus debitis architecto sapiente veniam corrupti.</p>
         </div>
       </div>
+      <!-- -----step1(flex-end)----- -->
       <div class="step2">
         <img src="../images/colorpicking.jpg" alt="colorpicking">
-        <div class="step_desc">
+        <div class="stepDesc">
           <span class="poiretOne font36">02</span>
           <p class="leelawadee font14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores in mollitia, maiores repudiandae accusamus debitis architecto sapiente veniam corrupti.</p>
         </div>
       </div>
     </div>
-    <div class="startButton">
+    <div class="startBtn">
       <a href="javascript:;" class="lithos font24 font_9f8680">START</a>
     </div>
   </section>
@@ -125,71 +136,96 @@
 
 
 
-  <section class="deco">
-    <h2 class="title lithos font16 font_616161">EVENT DECORATION</h2>
-    <div class="decoitem">
-      <a href="javascript:;" class="decoitem1 decoitem_inside font_fff">
-        <div class="deco_font deco_position1">
+  <!-- -----indexDeco----- -->
+  <section class="wrap">
+    <!-- -----title----- -->
+    <h2 class="lithos font16 font_616161">EVENT DECORATION</h2>
+    <!-- -----deco(grid)----- -->
+    <div class="deco">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem1 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition1">
           <h3 class="leelawadee font16">House Opening</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div>
       </a>
-      <a href="javascript:;" class="decoitem2 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem2 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div>
       </a>
-      <a href="javascript:;" class="decoitem3 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem3 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div>  
       </a>
-      <a href="javascript:;" class="decoitem4 decoitem_inside font_fff">
-        <div class="deco_font deco_position1">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem4 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition1">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem5 decoitem_inside font_fff">
-        <div class="deco_font deco_position1">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem5 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition1">
           <h3 class="leelawadee font16">Opening</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem6 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem6 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem7 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem7 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem8 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem8 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem9 decoitem_inside font_fff">
-        <div class="deco_font deco_position1">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem9 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition1">
           <h3 class="leelawadee font16">Wedding</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem10 decoitem_inside font_fff">
-        <div class="deco_font deco_position1">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem10 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition1">
           <h3 class="leelawadee font16">Birthday Party</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
       </a>
-      <a href="javascript:;" class="decoitem11 decoitem_inside font_fff">
-        <div class="deco_font deco_position2">
+      <!-- -----decoImg(bg-img)----- -->
+      <a href="javascript:;" class="decoitem11 font_fff">
+        <!-- -----decoDesc----- -->
+        <div class="decoPosition2">
           <h3 class="leelawadee font16">House Opening</h3>
           <p class="leelawadee font14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, ipsa.</p>
         </div> 
@@ -205,27 +241,30 @@
 
 
 
-
-  <section class="workshop">
-    <h2 class="title lithos font16 font_616161">WORKSHOP</h2>
-    <div class="oneDayWorkshop workshopType">
+  <!-- -----indexWorkshop----- -->
+  <section class="wrap">
+    <!-- -----title----- -->
+    <h2 class="lithos font16 font_616161">WORKSHOP</h2>
+    <!-- -----oneDayWorkshop----- -->
+    <div class="workshop oneDayWorkshop">
       <div class="workshopImg">
         <img src="../images/workshop01.jpg" alt="One Day Workshop">
       </div>
-      <div class="workshop_desc">
+      <div class="workshopDesc">
         <h3 class="poiretOne font24 font_616161">One Day Workshop</h3>
         <p class="leelawadee font14 font_616161">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nulla suscipit distinctio natus fugiat, ipsam, optio dolorem voluptatibus ducimus!</p>
         <a href="javascript:;" class="font_9f8680 font14 leelawadee">more</a>
       </div>
     </div>
-    <div class="longTermWorkshop workshopType">
-      <div class="workshop_desc">
+    <!-- -----longTermWorkshop----- -->
+    <div class="workshop longTermWorkshop">
+      <div class="workshopImg">
+        <img src="../images/workshop02.jpg" alt="Long Term Workshop">
+      </div>
+      <div class="workshopDesc">
         <h3 class="poiretOne font24 font_616161">Long Term Workshop</h3>
         <p class="leelawadee font14 font_616161">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ctio natus fugiat, ipsam, optio dolorem voluptatibus ducimus obcaecati!</p>
         <a href="javascript:;" class="font_9f8680 font14 leelawadee">more</a>
-      </div>
-      <div class="workshopImg">
-        <img src="../images/workshop02.jpg" alt="Long Term Workshop">
       </div>
     </div>
   </section>
@@ -238,17 +277,19 @@
 
 
 
-
-  <footer class="footer font_dacbc8 font14 leelawadee">
-    <a href="https://www.google.com.tw/maps/place/%E4%B8%8A%E5%BC%95%E6%B0%B4%E7%94%A2/@25.0667127,121.5348119,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abfd700a70ff:0x66353fb1b041e11b!8m2!3d25.0667079!4d121.5370059?hl=zh-TW" class="footeritem">
+  <!-- -----footer----- -->
+  <footer class="font_dacbc8 font14 leelawadee">
+    <!-- -----map----- -->
+    <a class="footer" href="https://www.google.com.tw/maps/place/%E4%B8%8A%E5%BC%95%E6%B0%B4%E7%94%A2/@25.0667127,121.5348119,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abfd700a70ff:0x66353fb1b041e11b!8m2!3d25.0667079!4d121.5370059?hl=zh-TW">
       <img src="../images/map.png" alt="Map">
     </a>
-    <div class="footeritem">
+
+    <div class="footer">
       <p>No.18, Aly. 2, Ln. 410, Minzu E. Rd., Zhongshan Dist., Taipei City.</p> 
       <p>Hours of Operation: 06:00 to 24:00</p>
       <p>TEL.02-2555-1222 FAX.02-2668-0748</p>
     </div>
-    <div class="footeritem">
+    <div class="footer">
       <div class="socialmedia">
         <a href="javasrcipt:;" class="font_dacbc8">
           <i class="fab fa-facebook-f"></i>
